@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://dfsnes750sj1i"]
+
+[ext_resource type="Script" path="res://scenes/main.gd" id="1_4kr2u"]
+[ext_resource type="PackedScene" uid="uid://qni6wrsq6ocg" path="res://scenes/platform.tscn" id="1_ehmem"]
+[ext_resource type="PackedScene" uid="uid://dr1q1nmaya5if" path="res://scenes/borders.tscn" id="3_b0skg"]
+[ext_resource type="PackedScene" uid="uid://dl14s2j5e1vre" path="res://scenes/lost_ball.tscn" id="4_nsao1"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_4kr2u")
+
+[node name="Platform" parent="." instance=ExtResource("1_ehmem")]
+position = Vector2(325, 510)
+
+[node name="Borders" parent="." instance=ExtResource("3_b0skg")]
+
+[node name="LostBall" parent="." instance=ExtResource("4_nsao1")]
+
+[node name="Balls" type="Node2D" parent="."]
