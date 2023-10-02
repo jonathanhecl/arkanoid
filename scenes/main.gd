@@ -23,7 +23,8 @@ func _process(delta):
 	ball_over_platform()
 
 func new_ball():
-	balls.add_child(ball.instantiate())
+	var b = ball.instantiate()
+	balls.add_child(b)
 
 func ball_bounce():
 	for b in balls.get_children():
