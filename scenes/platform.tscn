@@ -2,10 +2,12 @@
 
 [ext_resource type="Script" path="res://scenes/platform.gd" id="1_ephgj"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_1wa0i"]
-size = Vector2(126, 35)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_y1ita"]
+radius = 16.0
+height = 128.0
 
 [node name="Platform" type="CharacterBody2D"]
+up_direction = Vector2(0, 1)
 script = ExtResource("1_ephgj")
 
 [node name="ColorRect" type="ColorRect" parent="."]
@@ -15,4 +17,5 @@ color = Color(0, 1, 0, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(64, 16)
-shape = SubResource("RectangleShape2D_1wa0i")
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_y1ita")

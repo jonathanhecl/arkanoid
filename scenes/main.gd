@@ -3,12 +3,17 @@ extends Node2D
 var ball = preload("res://scenes/ball.tscn")
 
 @onready var balls = $Balls
+@onready var blocks = $Blocks
 @onready var platform: CharacterBody2D = $Platform
 
 var speed_ball = 70
 
 const MAX_W = 800
 const MAX_H = 600
+
+func _ready():
+	randomize()
+	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 
 func _process(delta):
 	var total_balls = balls.get_child_count()
@@ -18,14 +23,15 @@ func _process(delta):
 	ball_over_platform()
 
 func new_ball():
-	balls.add_child(ball.instantiate())
+	var b = ball.instantiate()
+	balls.add_child(b)
 
 func ball_bounce():
 	for b in balls.get_children():
 		if !b.bouncing:
-			b.linear_velocity = Vector2(0,0)
 			b.bouncing = true
-			b.apply_central_impulse(Vector2.UP * speed_ball)
+			b.linear_velocity = Vector2(randf_range(-200,200),0)
+			b.apply_impulse(Vector2.UP * speed_ball * 15)
 
 func ball_over_platform():
 	for b in balls.get_children():
