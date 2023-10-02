@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://dfsnes750sj1i"]
+[gd_scene load_steps=6 format=3 uid="uid://dfsnes750sj1i"]
 
 [ext_resource type="Script" path="res://scenes/main.gd" id="1_4kr2u"]
 [ext_resource type="PackedScene" uid="uid://qni6wrsq6ocg" path="res://scenes/platform.tscn" id="1_ehmem"]
 [ext_resource type="PackedScene" uid="uid://dr1q1nmaya5if" path="res://scenes/borders.tscn" id="3_b0skg"]
 [ext_resource type="PackedScene" uid="uid://dl14s2j5e1vre" path="res://scenes/lost_ball.tscn" id="4_nsao1"]
+[ext_resource type="PackedScene" uid="uid://d3bfdjfgsq1lt" path="res://scenes/block.tscn" id="5_ypmle"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_4kr2u")
@@ -16,3 +17,149 @@ position = Vector2(325, 510)
 [node name="LostBall" parent="." instance=ExtResource("4_nsao1")]
 
 [node name="Balls" type="Node2D" parent="."]
+
+[node name="Blocks" type="Node2D" parent="."]
+
+[node name="Block" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(56, 24)
+
+[node name="Block2" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(144, 24)
+
+[node name="Block3" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(232, 24)
+
+[node name="Block4" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(320, 24)
+
+[node name="Block5" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(408, 24)
+
+[node name="Block6" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(496, 24)
+
+[node name="Block7" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(584, 24)
+
+[node name="Block8" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(672, 24)
+
+[node name="Block9" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(56, 72)
+
+[node name="Block10" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(144, 72)
+
+[node name="Block11" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(232, 72)
+
+[node name="Block12" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(320, 72)
+
+[node name="Block13" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(408, 72)
+
+[node name="Block14" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(496, 72)
+
+[node name="Block15" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(584, 72)
+
+[node name="Block16" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(672, 72)
+
+[node name="Block17" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(56, 120)
+
+[node name="Block18" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(144, 120)
+
+[node name="Block19" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(232, 120)
+
+[node name="Block20" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(320, 120)
+
+[node name="Block21" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(408, 120)
+
+[node name="Block22" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(496, 120)
+
+[node name="Block23" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(584, 120)
+
+[node name="Block24" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(672, 120)
+
+[node name="Block25" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(56, 168)
+
+[node name="Block26" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(144, 168)
+
+[node name="Block27" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(232, 168)
+
+[node name="Block28" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(320, 168)
+
+[node name="Block29" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(408, 168)
+
+[node name="Block30" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(496, 168)
+
+[node name="Block31" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(584, 168)
+
+[node name="Block32" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(672, 168)
+
+[node name="Block33" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(56, 216)
+
+[node name="Block34" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(144, 216)
+
+[node name="Block35" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(232, 216)
+
+[node name="Block36" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(320, 216)
+
+[node name="Block37" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(408, 216)
+
+[node name="Block38" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(496, 216)
+
+[node name="Block39" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(584, 216)
+
+[node name="Block40" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(672, 216)
+
+[node name="Block41" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(56, 264)
+
+[node name="Block42" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(144, 264)
+
+[node name="Block43" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(232, 264)
+
+[node name="Block44" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(320, 264)
+
+[node name="Block45" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(408, 264)
+
+[node name="Block46" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(496, 264)
+
+[node name="Block47" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(584, 264)
+
+[node name="Block48" parent="Blocks" instance=ExtResource("5_ypmle")]
+position = Vector2(672, 264)

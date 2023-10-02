@@ -7,13 +7,15 @@
 friction = 0.0
 bounce = 1.0
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_vavf3"]
-radius = 61.4003
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wc1in"]
+radius = 52.5
+height = 125.0
 
 [node name="Ball" type="RigidBody2D" groups=["ball"]]
+scale = Vector2(1, 1.00583)
 physics_material_override = SubResource("PhysicsMaterial_hymsj")
-gravity_scale = 0.7
-can_sleep = false
+gravity_scale = 0.8
+freeze_mode = 1
 script = ExtResource("1_3rp4r")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -22,4 +24,4 @@ texture = ExtResource("1_5mkc6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2(0.4, 0.4)
-shape = SubResource("CircleShape2D_vavf3")
+shape = SubResource("CapsuleShape2D_wc1in")

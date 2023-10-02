@@ -15,3 +15,7 @@ func _physics_process(delta):
 func _input(event):
 	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
 		get_parent().ball_bounce()
+
+func _on_area_2d_body_entered(body):
+	if body.is_in_group("ball"):
+		pass

@@ -1,8 +1,10 @@
 extends Node2D
 
 var ball = preload("res://scenes/ball.tscn")
+var block = preload("res://scenes/block.tscn")
 
 @onready var balls = $Balls
+@onready var blocks = $Blocks
 @onready var platform: CharacterBody2D = $Platform
 
 var speed_ball = 70
