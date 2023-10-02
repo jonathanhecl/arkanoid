@@ -1,7 +1,6 @@
 extends Node2D
 
 var ball = preload("res://scenes/ball.tscn")
-var block = preload("res://scenes/block.tscn")
 
 @onready var balls = $Balls
 @onready var blocks = $Blocks
@@ -29,9 +28,8 @@ func new_ball():
 func ball_bounce():
 	for b in balls.get_children():
 		if !b.bouncing:
-			b.linear_velocity = Vector2(0,0)
 			b.bouncing = true
-			b.linear_velocity = Vector2(randf_range(-100,100), 0)
+			b.linear_velocity = Vector2(randf_range(-200,200),0)
 			b.apply_impulse(Vector2.UP * speed_ball * 15)
 
 func ball_over_platform():
