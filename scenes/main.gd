@@ -6,7 +6,7 @@ var ball = preload("res://scenes/ball.tscn")
 @onready var blocks = $Blocks
 @onready var platform: CharacterBody2D = $Platform
 
-var speed_ball = 70
+var speed_ball = 50
 
 const MAX_W = 800
 const MAX_H = 600

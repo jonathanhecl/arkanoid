@@ -5,6 +5,7 @@
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_hymsj"]
 friction = 0.0
+rough = true
 bounce = 1.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wc1in"]
@@ -12,9 +13,9 @@ radius = 52.5
 height = 125.0
 
 [node name="Ball" type="RigidBody2D" groups=["ball"]]
-scale = Vector2(1, 1.00583)
+scale = Vector2(1, 1.006)
 physics_material_override = SubResource("PhysicsMaterial_hymsj")
-gravity_scale = 0.8
+gravity_scale = 0.0
 freeze_mode = 1
 script = ExtResource("1_3rp4r")
 

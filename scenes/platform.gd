@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 func _physics_process(delta):
 	var mouse = get_viewport().get_mouse_position()
-	
+
 	mouse.y = get_parent().MAX_H - (get_child(0).size.y*2)
 	
 	if mouse.x < 0:
